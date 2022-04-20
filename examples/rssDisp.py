@@ -6,12 +6,12 @@ from RaspiOled import oled, ScrollText, log
 from PIL import Image,ImageDraw,ImageFont
 import feedparser                   # pip install feedparser
 
-rg_datetime = (( 0, 0), (128,16))   # 日時表示領域
-rg_source   = (( 0,16), ( 88,16))   # ソース表示領域
-rg_num      = ((88,16), ( 40,16))   # 記事番号表示領域
-rg_title    = (( 0,32), (128,32))   # タイトル表示領域
-sp_source   =  64  # ソース・スクロール速度
-sp_title    = 128  # タイトル・スクロール速度 [dot per sec]
+rg_datetime = (( 0, 0), (128,16))   # The date and time represent the field
+rg_source   = (( 0,16), ( 88,16))   # source display area
+rg_num      = ((88,16), ( 40,16))   # Article number display area
+rg_title    = (( 0,32), (128,32))   # Title display area
+sp_source   =  64                   # source  scroll speed
+sp_title    = 128                   # Title  scroll speed [dot per sec]
 rss_list = [
     "https://news.google.com/_/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE5mTTJRU0FtcGhLQUFQAQ?hl=ja&gl=JP&ceid=JP:ja",
     "https://news.yahoo.co.jp/pickup/world/rss.xml",
