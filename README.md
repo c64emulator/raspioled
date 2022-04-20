@@ -18,7 +18,7 @@ I was dissatisfied with the slow drawing speed of Adafruit_SSD1306.
 ## Program example
 
 An example program is shown below.
-
+```
     #!/usr/bin/python
 
     from RaspiOled import oled
@@ -32,20 +32,20 @@ An example program is shown below.
     draw.text((0,0), "Hello", font=font, fill=255)
     oled.begin()
     oled.image(image)
-
+```
 
 ## Installation method
 - When used with python2
-
+```
     $ sudo python setup.py install
     $ sudo pip install Pillow
-
+```
 
 - When used with python3
-
+```
     $ sudo python3 setup.py install
     $ sudo pip3 install Pillow
-
+```
 
 ## Example of use
 
@@ -59,9 +59,9 @@ The Raspberry Pi I2C transfer rate is 100kHz by default. As it is, it takes abou
 
 Increasing the I2C speed to 400kHz will increase the transfer speed by about 4 times. It seems that the speed of I2C is determined by the kernel setting, so change it in /boot/config.txt etc.
 Add the following line to /boot/config.txt and restart the Raspberry Pi.
-
+```
     dtparam=i2c_baudrate=400000
-
+```
 
 ## Property
 
