@@ -39,11 +39,13 @@ An example program is shown below.
 
     $ sudo python setup.py install
     $ sudo pip install Pillow
-    
+
+
 - When used with python3
 
     $ sudo python3 setup.py install
     $ sudo pip3 install Pillow
+
 
 ## Example of use
 
@@ -59,7 +61,8 @@ Increasing the I2C speed to 400kHz will increase the transfer speed by about 4 t
 Add the following line to /boot/config.txt and restart the Raspberry Pi.
 
     dtparam=i2c_baudrate=400000
-    
+
+
 ## Property
 
 ### **size**: 
